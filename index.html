@@ -14,6 +14,7 @@
 
     *{
       margin:0;
+
       padding:0;
       box-sizing:border-box;
       scroll-behavior:smooth;
@@ -407,7 +408,79 @@
       }
 
     }
+/* CLIENT SLIDER */
 
+/* CLIENT LOGO SLIDER */
+
+.clients-slider{
+    padding:80px 0;
+    background:#ffffff;
+    overflow:hidden;
+}
+
+.clients-slider h2{
+    text-align:center;
+    font-size:42px;
+    color:#0D2B5C;
+    margin-bottom:50px;
+}
+
+.slider{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.slide-track{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    width:max-content;
+    animation:scroll 25s linear infinite;
+}
+
+.slide{
+    min-width:220px;
+    height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f8f9fb;
+    border-radius:20px;
+    padding:20px 40px;
+}
+
+.slide img{
+    max-width:140px;
+    max-height:70px;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+    transition:0.3s ease;
+}
+.slide img{
+    max-width:140px;
+    max-height:70px;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+    transition:0.3s ease;
+}
+
+.slide img:hover{
+    transform:scale(1.08);
+}
+
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
   </style>
 </head>
 
@@ -528,16 +601,29 @@
       </div>
 
       <div class="service-card">
+        <h3>🏢 Property Consulting</h3>
+        <p>
+          We provide trusted property consulting solutions for individuals, investors and businesses seeking strategic real estate opportunities in Nigeria.
+        </p>
+        </div>
+
+        <div class="service-card">
+           <h3>📦 Container Consulting</h3>
+           <p>
+             Expert guidance on container sourcing, container logistics, leasing, shipping coordination and container business solutions.
+           </p>
+        </div>
+
+      <div class="service-card">
         <h3>📦 Clearing & Forwarding</h3>
         <p>
-          Smooth customs processing, documentation, and cargo handling
-          without delays.
+          Smooth customs processing, documentation, and cargo handling without delays.
         </p>
       </div>
 
     </div>
 
-  </div>
+
 
 </section>
 
@@ -556,21 +642,15 @@
       <h2>About Zarzim Nigeria Limited</h2>
 
       <p>
-        Zarzim Nigeria Limited is a Lagos-based logistics company providing
-        professional air, sea, and land freight solutions alongside
-        clearing & forwarding services.
+        Zarzim Nigeria Limited is a Lagos-based logistics and supply chain company delivering end-to-end freight and business support solutions across air, sea and land
       </p>
 
       <p>
-        Our mission is to deliver reliable, efficient, and technology-driven
-        logistics solutions that connect businesses and individuals to
-        global opportunities.
+        Beyond logistics, we also provide property consulting and container consulting services for businesses and individuals looking for trusted operational support and investment opportunities.
       </p>
 
       <p>
-        From urgent international shipments to large commercial cargo,
-        Zarzim handles every stage of the logistics process with precision
-        and professionalism.
+        With a focus on reliability, speed and professionalism, Zarzim helps businesses move goods efficiently while simplifying complex logistics processes.
       </p>
 
     </div>
@@ -607,10 +687,19 @@
       </div>
 
       <div class="why-card">
+        <h3>Customs Expertise</h3>
+        <p>Professional clearing and forwarding support without delays.</p>
+      </div>
+      
+      <div class="why-card">
         <h3>Trusted Support</h3>
         <p>Responsive customer service and shipment assistance.</p>
       </div>
 
+      <div class="why-card">
+        <h3>Business Solutions</h3>
+        <p>Property and container consulting tailored for growing businesses.</p>
+      </div>
     </div>
 
   </div>
@@ -674,6 +763,46 @@
     </a>
 
   </div>
+
+</section>
+<section class="clients-slider">
+
+    <h2>Trusted By Leading Brands</h2>
+
+    <div class="slider">
+
+        <div class="slide-track">
+
+            <div class="slide">
+                <img src="images/ifitness.png" alt="iFitness">
+            </div>
+
+            <div class="slide">
+                <img src="images/burgerking.png" alt="Burger King">
+            </div>
+
+            <div class="slide">
+                <img src="images/chickenrepublic.png" alt="Chicken Republic">
+            </div>
+
+            <div class="slide">
+                <img src="images/ifitness.png" alt="iFitness">
+            </div>
+
+            <div class="slide">
+                <img src="images/burgerking.png" alt="Burger King">
+            </div>
+
+            <div class="slide">
+                <img src="images/chickenrepublic.png" alt="Chicken Republic">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    </div>
 
 </section>
 
